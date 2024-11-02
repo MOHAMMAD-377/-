@@ -1,0 +1,21 @@
+print("""💀☠️
+Welcome to my island !
+There are two doors in front of you. 🚪 a RED door and 🚪 a BLUE door""")
+doors = input("Whitch door do you want to open ? ")
+if doors.lower() == 'red':
+    print("Great! new you entered a room.")
+    boxes = input("YOU found three boxes : 🎁 White , 🎁 Black , 🎁 Green \n")
+    if boxes.lower() == 'white':
+        print("Oops , You open a box snaks")
+    elif boxes.lower() == 'black':
+        print("Oops , You open a box spiders")
+    elif boxes.lower() == 'green':
+        print("Congratulation! You found the treasure!")
+    else:
+        print("Invalide choice!")
+elif doors.lower() == 'blue':
+    print("""Oops , You chose the crocodile open
+    Game over!
+""")
+else:
+    print("Invalid choice!")

@@ -1,0 +1,37 @@
+library = []
+wishlist = []
+#libarary
+book_name = input("Enter the name of a book you own : ")
+library.append(book_name)
+
+book_name = input("Enter the name of another book you own (or press 'Enter' o skip) : ")
+if book_name:
+    library.append(book_name)
+
+print(f"Your Library: {library}")
+
+#wishlist
+book_name = input("Enter the name of a book you wish to have in the futur : ")
+wishlist.append(book_name)
+
+book_name = input("Enter the name of another book you wish to have (or press 'Enter' o skip) : ")
+if book_name:
+    wishlist.append(book_name)
+
+print(f"Your wishlist : {wishlist}")
+
+#merging wishlist into library
+acquired_book = input("Enter the name of a book from your wishlist that you've acquired (or press 'Enter' to skip) : ")
+if acquired_book  in wishlist:
+    library.append(acquired_book)
+    wishlist.remove(acquired_book)
+
+print(f"Updated Library : {library}")
+print(f"Updated Wishlist : {wishlist}")
+
+#donating books
+donating_books = input("Enter the name of a book from your library you wish donates (or press 'Enter' to skip) : ")
+if donating_books in library:
+    library.remove(donating_books)
+    
+print(f"Final Library after Donation : {library}")

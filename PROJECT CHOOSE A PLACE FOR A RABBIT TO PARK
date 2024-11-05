@@ -1,0 +1,15 @@
+print("Welcome to place the rabbit \n")
+Rabbit = ['🌿' , '🌿' , '🌿'] , ['🌿' , '🌿' , '🌿'] , ['🌿' , '🌿' , '🌿']
+
+print(f"{Rabbit[0]} \n{Rabbit[1]} \n{Rabbit[2]}")
+print("Where should the rabbit go❓ 🐇")
+
+position = input("Please choose a row and a column ")
+row = int(position[0])
+column = int(position[1])
+
+Rabbit[row][column] = '🐇'
+
+print(f"Success ....")
+
+print(f"{Rabbit[0]} \n{Rabbit[1]} \n{Rabbit[2]}")

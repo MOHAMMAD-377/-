@@ -8,7 +8,7 @@ position = input("Please choose a row and a column ")
 row = int(position[0])
 column = int(position[1])
 
-Rabbit[row][column] = '🐇'
+Rabbit[row-1][column-1] = '🐇'
 
 print(f"Success ....")
 
